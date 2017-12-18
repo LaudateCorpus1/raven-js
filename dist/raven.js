@@ -1,4 +1,4 @@
-/*! Raven.js 3.21.0 (6ea984d) | github.com/getsentry/raven-js */
+/*! Raven.js 3.21.0 (ba6cf5b) | github.com/getsentry/raven-js */
 
 /*
  * Includes TraceKit
@@ -153,7 +153,8 @@ function Raven() {
   this._fetchDefaults = {
     method: 'POST',
     credentials: 'include',
-    keepalive: true
+    keepalive: true,
+    referrerPolicy: 'origin'
   };
   this._ignoreOnError = 0;
   this._isRavenInstalled = false;
